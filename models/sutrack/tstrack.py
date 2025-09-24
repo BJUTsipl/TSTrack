@@ -12,10 +12,10 @@ from lib.utils.box_ops import box_xyxy_to_cxcywh
 from lib.utils.pos_embed import get_sinusoid_encoding_table, get_2d_sincos_pos_embed
 from.neck import build_neck
 from .fem import FEM
-from ...config.sutrack.config import cfg
+from ...config.tstrack.config import cfg
 
 
-class SUTRACK(nn.Module):
+class TSTRACK(nn.Module):
     """ This is the base class for SUTrack """
     def __init__(self, encoder, decoder,neck,fem,
                  num_frames=1, num_template=1,
@@ -133,7 +133,7 @@ class SUTRACK(nn.Module):
             raise NotImplementedError
 
 
-def build_sutrack(cfg):
+def build_tstrack(cfg):
     encoder = build_encoder(cfg)
     # 构建FEM模块
     fem = FEM(
