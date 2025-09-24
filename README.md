@@ -30,3 +30,5 @@ ingNet, and GOT-10k, demonstrate the effectiveness of TSTrack.
  The results show that TSTrack achieves a superior tracking
  accuracy while maintaining a lightweight design, significantly
  outperforming existing state-of-the-art methods.
+
+ ![image](https://github.com/BJUTsipl/TSTrack/blob/main/framework.png)
