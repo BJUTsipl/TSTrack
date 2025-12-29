@@ -1,13 +1,4 @@
-  Single-object tracking is a fundamental enabling
-technology in the field of remote sensing observation. It plays
-a crucial role in tasks such as unmanned aerial vehicle route
-surveillance and maritime vessel trajectory prediction. However,
-because of challenges such as the weak discriminative power
-of target features, interference from complex environments, and
-frequent viewpoint changes, existing trackers often suffer from
-insufficient temporal modeling capabilities and low computa
-tional efficiency, which limit their practical deployment. To
-address these challenges, we propose TSTrack, a novel lightweight
+   We propose TSTrack, a novel lightweight
 single-object tracking framework that integrates Transformer
 and Mamba-based spatiotemporal modeling. First, we propose
 the target-aware feature purification preprocessor (TAFPP) ,
@@ -45,6 +36,11 @@ SUTrack unifies different modalities into a unified representation and trains a 
 | MixformerV2-S    | 60.6        | -            | 75.8              | 30              | 
 | HCAT             | 59.3        | 65.1         | 76.6              | 45              | 
 | FEAR             | 53.5        | 61.9         | -                 | 60              | 
+
+## Acknowledgments
+This work is based on our previous work [SUTrack](https://github.com/chenxin-dlut/SUTrack/tree/main), which is a unified multi-modal tracker.
+Our experimental setup is consistent with the RGB-based part of SUTrack, and you can refer to the relevant experimental configurations of SUTrack.Please unzip the code files and use them together.
+If you have any questions, please leave them in the github comments.
 
 ## Install the environment
 ```
@@ -123,7 +119,4 @@ python lib/test/utils/transform_got10k.py --tracker_name sutrack --cfg_name sutr
 python tracking/test.py sutrack sutrack_b224 --dataset trackingnet --threads 2
 python lib/test/utils/transform_trackingnet.py --tracker_name sutrack --cfg_name sutrack_b224
 ```
-## Acknowledgments
-This work is based on our previous work [SUTrack](https://github.com/chenxin-dlut/SUTrack/tree/main), which is a unified multi-modal tracker.
-Our experimental setup is consistent with the RGB-based part of SUTrack, and you can refer to the relevant experimental configurations of SUTrack.
-If you have any questions, please leave them in the github comments.
+
