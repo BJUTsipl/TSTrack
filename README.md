@@ -33,4 +33,4 @@ outperforming existing state-of-the-art methods.
 
 SUTrack unifies different modalities into a unified representation and trains a Transformer encoder.
 
-![SUTrack_framework](Figures/framework.png)
+![SUTrack_framework](framework.png)
