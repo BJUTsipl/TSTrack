@@ -38,7 +38,7 @@ SUTrack unifies different modalities into a unified representation and trains a 
 | FEAR             | 53.5        | 61.9         | -                 | 60              | 
 
 ## Acknowledgments
-This work is based on our previous work [SUTrack](https://github.com/chenxin-dlut/SUTrack/tree/main), which is a unified multi-modal tracker.
+This work is based on  work [SUTrack](https://github.com/chenxin-dlut/SUTrack/tree/main), which is a unified multi-modal tracker.
 Our experimental setup is consistent with the RGB-based part of SUTrack, and you can refer to the relevant experimental configurations of SUTrack.Please unzip the code files and use them together.
 If you have any questions, please leave them in the github comments.
 
