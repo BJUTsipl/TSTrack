@@ -84,7 +84,7 @@ Run the following command to set paths for this project
 ```
 python tracking/create_default_local_file.py --workspace_dir . --data_dir ./data --save_dir .
 ```
-### Train SUTrack
+### Train TSTrack
 The pretrained backbone models can be downloaded here [[Google Drive]](https://drive.google.com/drive/folders/1Ut0qrM5mwIw4Qhu-sOnzm2QCAOE7cTYH?usp=sharing)[[Baidu Drive]](https://pan.baidu.com/s/1pMc3SzshxhLTGTF99GrvMg?pwd=6wtc).
 Put the pretrained models in [./pretrained](pretrained), it should be like:
 
@@ -103,7 +103,6 @@ python -m torch.distributed.launch --nproc_per_node 4 lib/train/run_training.py 
 python tracking/train.py --script sutrack --config sutrack_b224 --save_dir . --mode single
 ```
 ## Test and evaluate on benchmarks
-### SUTrack for RGB-based Tracking
 - LaSOT
 ```
 python tracking/test.py sutrack sutrack_b224 --dataset lasot --threads 2
